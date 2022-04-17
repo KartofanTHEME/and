@@ -20,11 +20,11 @@
       <script src="../../js/script.js" defer></script>
     <script type="text/javascript">
      function InsertNewRow () {
-var body = document.getElementsByTagName("body")[0];
-  var tbl = document.createElement("table");
-  var tblBody = document.createElement("tbody");
-cell.appendChild(cellText);
-      row.appendChild(cell);
+var tbodyRef = document.getElementById('game_language_options').getElementsByTagName('tbody')[0];
+var newRow = tbodyRef.insertRow();
+var newCell = newRow.insertCell();
+var newText = document.createTextNode('new row');
+newCell.appendChild(newText);
       }
     </script>
     </head>
