@@ -83,7 +83,7 @@ newCell.appendChild(newText);
             <img class="istore" src="../../images/Music.png" alt="" width="200" height="200" style="border-radius: 50px;">
               <div style="width: 395px; margin-left: 5px;">
                 <!--app description-->
-                <p class="lang info" key="music_info">Слушайте музыку, читайте текста, как в караоке</p>
+                <p class="lang info" key="music_info">Слушайте музыку, читайте тексты, как в караоке. Без всяких подписок.</p>
                 <!--release-->
                 <p class="info"><span class="lang" key="release">Дата выхода: </span><a class="lang" key="21apr2022">22 апр. 2022</a></p>
                 <!--developer and publiser-->
@@ -100,6 +100,9 @@ newCell.appendChild(newText);
             </div>
         </div>
       </div>
+      <div class="app-list">
+      	<div class="alert alert-danger" role="alert" style="text-align: center;"><strong class="lang" key="Musicinfo">К сожалению, пришлось поднять планку, и теперь минимальная поддерживаемая версия Android: 6.0. Но это временное решение во избежании ошибок, вылетов и поломки системы. Надеемся на ваше понимание. Ваша kTH-Studio.</strong></div>
+</div>
         <div class="app-list1">
           <div class="one-news one-news-second-3">
             <!--system requirements-->
@@ -109,16 +112,19 @@ newCell.appendChild(newText);
               <tr>
                 <th class="lang" key="system">Системные требования:</th>
                 <th class="lang" key="minimum">Минимальные</th>
+                <th class="lang" key="recommended">Рекомендуемые</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <th scope="row" class="lang" key="android">OC Android</th>
-                <td>4.4</td>
+                <td><strike>4.4</strike> -> 6.0</td>
+                <td>8.0  <span class="lang" key="later">и позднее</span></td>
               </tr>
               <tr>
                 <th scope="row" class="lang" key="storage">Память устройства</th>
-                <td>15 <span class="lang" key="mb">Мб</span></td>
+                <td><strike>15</strike> -> 10 <span class="lang" key="mb">Мб</span></td>
+                      <td>50 <span class="lang" key="mb">Мб</span></td>
               </tr>
             </tbody>
           </table>
@@ -139,20 +145,19 @@ newCell.appendChild(newText);
             <tbody>
               <tr>
                 <th scope="row" class="lang" key="russian1">Русский</th>
-                <td><span class="glyphicon glyphicon-ok"></span></td>
+                <td>Частично</td>
                 <td></td>
                 <td></td>
               </tr>
               <tr>
-                <th scope="row" class="lang" key="russian1">Русский</th>
+                <th scope="row" class="lang" key="russian1">Английский</th>
                 <td><span class="glyphicon glyphicon-ok"></span></td>
                 <td></td>
                 <td></td>
               </tr>
             </tbody>
           </table>
-          <a class="all_languages" onclick="InsertNewRow ();">Просмотреть все поддерживаемые языки (25)</a>
-          <a class="all_languages1" style="display: none;" onclick="Reload ();">Уменьшить поддерживаемые языки</a>
+          
         </div>
       </div>
     </div>
@@ -161,7 +166,7 @@ newCell.appendChild(newText);
       <div class="list-group">
         <a href="" class="list-group-item" style="height: 48%;">
           <h4 class="list-group-item-heading"><span class="glyphicon glyphicon-save"></span><span class="lang" key="dwn"> Скачать</span></h4>
-          <p class="list-group-item-text"><span class="lang" key="ver">Версия:</span> 1.0</p>
+          <p class="list-group-item-text"><span class="lang" key="ver">Версия:</span> 1.0.9 (Codename: Russian Update)</p>
         </a>
       </div>
     </div>
